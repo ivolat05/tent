@@ -89,12 +89,25 @@ $(function () {
 	validationForm();
 
 	//popup
-	$(".open-modal, .open-modal-2").magnificPopup({
+	$(".open-modal").magnificPopup({
 		type: "inline",
 		showCloseBtn: false,
 		mainClass: "mfp-fade",
+		callbacks: {
+			close: function () {
+				const solutionBox = document.querySelectorAll(".solution-box");
+				if (solutionBox) {
+					solutionBox.forEach((item) => {
+						item.classList.remove("--active");
+					});
+				}
+			},
+		},
 	});
-
+	// устроняет баг с невозврощением блока при hover после появления окна popup
+	jQuery(".open-modal").on("focus", function () {
+		jQuery(this).blur();
+	});
 	// галерея
 
 	function galary() {
