@@ -147,7 +147,7 @@ $(function () {
 		css3easing: "linear",
 		direction: "right",
 		duplicated: true,
-		duration: 40000,
+		duration: 30000,
 		pauseOnHover: true,
 		gap: 0,
 		startVisible: true,
@@ -156,7 +156,7 @@ $(function () {
 		css3easing: "linear",
 		direction: "left",
 		duplicated: true,
-		duration: 40000,
+		duration: 30000,
 		pauseOnHover: true,
 		gap: 0,
 		startVisible: true,
@@ -168,7 +168,7 @@ $(function () {
 				infinite: true,
 				dots: true,
 				arrows: false,
-				slidesToShow: 1,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 			});
 		} else {
@@ -182,7 +182,7 @@ $(function () {
 			infinite: true,
 			dots: true,
 			arrows: false,
-			slidesToShow: 1,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 		});
 	} else {

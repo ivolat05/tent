@@ -28,23 +28,68 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="scroll-top" class="wrapper">
     	<header class="header">
     		<div class="container">
     			<div class="header-wrapp d-flex align-items-start justify-content-between">
+    				<button class="header-menu-open d-flex d-lg-none align-items-center justify-content-center">
+    					<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    						<rect x="0.5" width="21" height="2" rx="1" fill="#042940" />
+    						<rect x="0.5" y="5" width="16" height="2" rx="1" fill="#042940" />
+    						<rect x="0.5" y="10" width="16" height="2" rx="1" fill="#042940" />
+    					</svg>
+    				</button>
     				<a href="#" class="header-logo">
     					<img src="./assets/img/header/logo.svg" alt="tent group" class="logo-img">
     				</a>
     				<nav class="header-nav">
+    					<button class="header-menu-close  d-flex d-lg-none align-items-center justify-content-center">
+    						<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    							<path d="M2 2L14.069 14.931M27 27L14.069 14.931M14.069 14.931L27 2M14.069 14.931L2 27"
+    								stroke="#BDBDBD" stroke-width="3" />
+    						</svg>
+    					</button>
     					<ul class="header-list d-flex justify-content-center  align-items-center">
     						<li class="header-list-inner">
-    							<a href="#" class="header-list-link --active">
+    							<div class="header-list-link --active">
     								Маркизы
-    							</a>
+    							</div>
     							<svg class="header-list-arrow" width="14" height="7" viewBox="0 0 14 7" fill="none"
     								xmlns="http://www.w3.org/2000/svg">
     								<path d="M1 1L7 5L13 1" stroke="#DBF227" stroke-width="2" />
     							</svg>
+    							<ul class="header-sublist">
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Корзинные маркизы
+    									</a>
+    								</li>
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Кассетные маркизы
+    									</a>
+    								</li>
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Фасадные маркизы
+    									</a>
+    								</li>
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Вертикальные маркизы
+    									</a>
+    								</li>
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Двусторонние маркизы
+    									</a>
+    								</li>
+    								<li class="header-list-inner">
+    									<a href="#" class="header-list-link">
+    										Перголы
+    									</a>
+    								</li>
+    							</ul>
     						</li>
     						<li class="header-list-inner">
     							<a href="#" class="header-list-link">
@@ -93,24 +138,18 @@
     				</div>
     				<div class="main-body ">
     					<div class="main-body-coll --one">
-    						<img src="./assets/img/main/main-1.png" alt="" class="main-body-img">
-    						<div class="main-box-absolute ">
-    							<img src="./assets/img/main/main-2.png" alt="" class="main-body-img --absolut">
-    						</div>
-    						<div class="main-box-arrow">
-    							<div class="main-img-container d-flex align-items-center justify-content-center">
-    								<img src="./assets/img/main/main-3.png" alt="" class="main-body-img --padding-top">
-    							</div>
-    							<img src="./assets/img/main/main-2.svg" alt="" class="main-body-img --center">
-    							<div class="main-body-text">
-    								открытый <br> локтевой маркиз
-    							</div>
+    						<img src="./assets/img/main/main-1.png" alt="" class="main-body-img d-sm-block d-none --relative">
+    						<img src="./assets/img/main/main-1-mob.png" alt=""
+    							class="main-body-img d-block d-sm-none --relative">
+    						<div class="main-body-text">
+    							открытый <br> локтевой маркиз
     						</div>
     					</div>
     	
     					<div class="main-body-coll --two">
     						<div class="main-body-wrapper">
-    							<img src="./assets/img/main/main-4.png" alt="" class="main-body-img">
+    							<img src="./assets/img/main/main-4.png" alt="" class="main-body-img d-sm-block d-none">
+    							<img src="./assets/img/main/main-4-mob.png" alt="" class="main-body-img d-block d-sm-none">
     						</div>
     	
     						<div class="main-container-text">
@@ -118,11 +157,12 @@
     						</div>
     					</div>
     					<div class="main-body-coll">
-    						<img src="./assets/img/main/main-5.png" alt="" class="main-body-img">
+    						<img src="./assets/img/main/main-5.png" alt="" class="main-body-img d-sm-block d-none">
+    						<img src="./assets/img/main/main-5-mob.png" alt="" class="main-body-img d-block d-sm-none">
     					</div>
     				</div>
     				<div class="main-footer">
-    					<div class="main-box-btn d-flex align-items-center justify-content-between">
+    					<div class="main-box-btn d-flex flex-column flex-xl-row align-items-center justify-content-between">
     						<a href="#popup-1" class="open-modal main-btn d-flex align-items-center justify-content-center">
     							Расчет стоимости
     							<svg class="main-btn-svg" width="14" height="16" viewBox="0 0 14 16" fill="none"
@@ -134,11 +174,11 @@
     							написать в whats’app
     						</a>
     					</div>
-    					<div class="main-row d-flex align-items-center justify-content-between ">
+    					<div class="main-row d-flex align-items-xl-center align-items-start justify-content-between ">
     						<div class="main-num">
     							01
     						</div>
-    						<div class="main-row-coll d-flex align-items-center justify-content-between">
+    						<div class="main-row-coll d-block d-xl-flex align-items-center justify-content-between">
     							<h3 class="main-row-title">
     								Стильные
     							</h3>
@@ -148,11 +188,11 @@
     							</div>
     						</div>
     					</div>
-    					<div class="main-row d-flex align-items-center  justify-content-between">
+    					<div class="main-row d-flex align-items-xl-center align-items-start  justify-content-between">
     						<div class="main-num">
     							02
     						</div>
-    						<div class="main-row-coll  d-flex align-items-center justify-content-between">
+    						<div class="main-row-coll   d-block d-xl-flex align-items-center justify-content-between">
     							<h3 class="main-row-title">
     								Долговечные
     							</h3>
@@ -162,11 +202,11 @@
     							</div>
     						</div>
     					</div>
-    					<div class="main-row d-flex align-items-center  justify-content-between">
+    					<div class="main-row d-flex align-items-xl-center align-items-start  justify-content-between">
     						<div class="main-num">
     							03
     						</div>
-    						<div class="main-row-coll  d-flex align-items-center justify-content-between">
+    						<div class="main-row-coll   d-block d-xl-flex align-items-center justify-content-between">
     							<h3 class="main-row-title">
     								Функциональные
     							</h3>
@@ -193,7 +233,7 @@
     						</div>
     						<div class="solutin-box-row  d-flex justify-content-between align-items-end">
     							<h4 class="solution-box-title ">
-    								Корзинные маркизы
+    								Корзинные <br> маркизы
     							</h4>
     							<span class="solution-box-span">
     								подробнее
@@ -255,7 +295,7 @@
     						</div>
     						<div class="solutin-box-row  d-flex justify-content-between align-items-end">
     							<h4 class="solution-box-title">
-    								Кассетные маркизы
+    								Кассетные <br> маркизы
     							</h4>
     							<div class="solution-box-span">
     								подробнее
@@ -318,7 +358,7 @@
     						</div>
     						<div class="solutin-box-row  d-flex justify-content-between align-items-end">
     							<h4 class="solution-box-title">
-    								Фасадные маркизы
+    								Фасадные <br> маркизы
     							</h4>
     							<div class="solution-box-span">
     								подробнее
@@ -382,7 +422,7 @@
     	
     						<div class="solutin-box-row  d-flex justify-content-between align-items-end">
     							<h4 class="solution-box-title">
-    								Вертикальные маркизы
+    								Вертикальные <br> маркизы
     							</h4>
     							<div class="solution-box-span">
     								подробнее
@@ -447,7 +487,7 @@
     	
     						<div class="solutin-box-row  d-flex justify-content-between align-items-end">
     							<h4 class="solution-box-title">
-    								Двусторонние маркизы
+    								Двусторонние <br> маркизы
     							</h4>
     							<div class="solution-box-span">
     								подробнее
@@ -573,7 +613,7 @@
     	</section>
     	<div class="etap etap-padding">
     		<div class="container">
-    			<div class="etap-wrapp  d-flex justify-content-between">
+    			<div class="etap-wrapp  d-lg-flex d-block justify-content-between">
     				<div class="etap-box d-flex align-items-center justify-content-between">
     					<div class="etap-box-img d-flex align-items-center justify-content-center">
     						<img src="./assets/img/etap/etap-1.svg" alt="" class="etap-img">
@@ -603,7 +643,7 @@
     	</div>
     	<section class="forms forms-padding">
     		<div class="container">
-    			<div class="forms-wrapp d-flex justify-content-between">
+    			<div class="forms-wrapp d-lg-flex d-block  justify-content-between">
     				<div class="forms-coll d-flex flex-column">
     					<h3 class="forms-title">
     						Бесплатный замер и <span class="forms-title-span">
@@ -645,7 +685,7 @@
     	</section>
     	<section class="call call-padding">
     		<div class="container">
-    			<div class="call-wrapp d-flex justify-content-between">
+    			<div class="call-wrapp d-lg-flex d-block justify-content-between">
     				<div class="call-coll d-flex flex-column">
     					<h3 class="call-title title">
     						Нужен предварительный расчет?
@@ -676,11 +716,8 @@
     			<div class="benefits-wrapp">
     				<div class="benefits-row">
     					<div class="benefits-box-img">
-    						<img src="./assets/img/benefits/benefits-1.png" alt="" class="benefits-img">
-    						<div class="benefits-mark">
-    							<img src="./assets/img/benefits/benefits-mark-1.png" alt="" class="benefits-mark-img">
-    							<img src="./assets/img/benefits/benefits-pointer.svg" alt="" class="benefits-pointer">
-    						</div>
+    						<img src="./assets/img/benefits/benefits-1.png" alt="" class="benefits-img d-none d-lg-block">
+    						<img src="./assets/img/benefits/benefits-1-mob.png" alt="" class="benefits-img d-block d-lg-none">
     					</div>
     					<div class="benefits-box-text">
     						<h3 class="benefits-title">
@@ -697,11 +734,8 @@
     	
     				<div class="benefits-row">
     					<div class="benefits-box-img">
-    						<img src="./assets/img/benefits/benefits-2.png" alt="" class="benefits-img">
-    						<div class="benefits-mark">
-    							<img src="./assets/img/benefits/benefits-mark-2.png" alt="" class="benefits-mark-img">
-    							<img src="./assets/img/benefits/benefits-pointer.svg" alt="" class="benefits-pointer">
-    						</div>
+    						<img src="./assets/img/benefits/benefits-2.png" alt="" class="benefits-img d-none d-lg-block">
+    						<img src="./assets/img/benefits/benefits-2-mob.png" alt="" class="benefits-img d-block d-lg-none">
     					</div>
     					<div class="benefits-box-text">
     						<h3 class="benefits-title">
@@ -718,11 +752,8 @@
     	
     				<div class="benefits-row">
     					<div class="benefits-box-img">
-    						<img src="./assets/img/benefits/benefits-3.png" alt="" class="benefits-img">
-    						<div class="benefits-mark">
-    							<img src="./assets/img/benefits/benefits-mark-3.png" alt="" class="benefits-mark-img">
-    							<img src="./assets/img/benefits/benefits-pointer.svg" alt="" class="benefits-pointer">
-    						</div>
+    						<img src="./assets/img/benefits/benefits-3.png" alt="" class="benefits-img d-none d-lg-block">
+    						<img src="./assets/img/benefits/benefits-3-mob.png" alt="" class="benefits-img d-block d-lg-none">
     					</div>
     					<div class="benefits-box-text --padding-fix">
     						<h3 class="benefits-title">
@@ -741,7 +772,7 @@
     	</section>
     	<section class="forms forms-order-padding forms-order">
     		<div class="container">
-    			<div class="forms-wrapp d-flex justify-content-between">
+    			<div class="forms-wrapp d-lg-flex d-block justify-content-between">
     				<div class="forms-coll d-flex flex-column">
     					<h3 class="forms-title">
     						Маркизы на заказ по цене
@@ -752,8 +783,8 @@
     					</h3>
     					<p class="forms-text">
     						Стоимость та же. А внешний вид и надежность конструкции <span class="forms-text-span">
-    							отличаются кардинально
-    						</span>. Маркизы,
+    							отличаются кардинально.
+    						</span> Маркизы,
     						сконструированные индивидуально для вашего объекта будут смотрется лучше и держаться крепче.
     	
     					</p>
@@ -794,7 +825,7 @@
     			</div>
     			<div class="terms-body">
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num d-flex align-items-center justify-content-center">
     						01
     					</div>
@@ -809,7 +840,7 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						02
     					</div>
@@ -823,7 +854,7 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						03
     					</div>
@@ -837,7 +868,7 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						04
     					</div>
@@ -852,7 +883,7 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						05
     					</div>
@@ -867,7 +898,7 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box d-flex align-items-start">
+    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						06
     					</div>
@@ -887,7 +918,7 @@
     	</section>
     	<section class="gallary gallary-padding">
     		<div class="container">
-    			<div class="gallary-head d-flex justify-content-between align-items-end">
+    			<div class="gallary-head d-lg-flex d-block justify-content-between align-items-center">
     				<h3 class="gallary-title title">
     					Наши объекты
     				</h3>
@@ -923,7 +954,7 @@
     				</a>
     			</div>
     		</div>
-    		<div class="galary-mob d-none">
+    		<div class="galary-mob  ">
     			<div class="galary-mob-slaid  gallary-container">
     				<a href="./assets/img/gallery/gallery-1.jpg" class="gallery-box">
     					<img src="./assets/img/gallery/gallery-1.jpg" alt="" class="gallery-box-img">
@@ -963,29 +994,66 @@
     	</section>
     	<footer class="footer footer-padding">
     		<div class="container">
-    			<div class="footer-wrapp d-flex justify-content-between">
-    				<ul class="footer-list">
-    					<li class="footer-list-inner footer-list-header">
+    			<div class="footer-wrapp d-md-flex d-block justify-content-between">
+    				<div class="footer-coll">
+    					<h3 class="footer-list-inner footer-list-header">
     						Контакты
-    					</li>
-    					<li class="footer-list-inner">
-    						<a href="#" class="footer-list-link">
-    							номер телефона
-    						</a>
-    					</li>
-    					<li class="footer-list-inner">
-    						<a href="#" class="footer-list-link">
-    							адрес почты
-    						</a>
-    					</li>
-    					<li class="footer-list-inner">
-    						<a href="#" class="footer-list-link">
-    							физический адрес
-    						</a>
-    					</li>
-    				</ul>
+    					</h3>
+    					<div class="footer-coll-row">
+    						<svg class="footer-coll-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
+    							xmlns="http://www.w3.org/2000/svg">
+    							<path
+    								d="M31.1667 23.9698V28.2198C31.1683 28.6144 31.0874 29.0049 30.9294 29.3664C30.7713 29.7279 30.5395 30.0524 30.2488 30.3191C29.958 30.5858 29.6148 30.7889 29.241 30.9153C28.8673 31.0417 28.4713 31.0887 28.0783 31.0531C23.719 30.5795 19.5316 29.0899 15.8525 26.704C12.4296 24.5289 9.52755 21.6269 7.35249 18.204C4.95829 14.5082 3.46833 10.3004 3.00332 5.92148C2.96792 5.52972 3.01448 5.13489 3.14003 4.76211C3.26558 4.38934 3.46738 4.04679 3.73257 3.75628C3.99776 3.46576 4.32054 3.23365 4.68036 3.07472C5.04017 2.91579 5.42914 2.83352 5.82249 2.83315H10.0725C10.76 2.82638 11.4265 3.06984 11.9478 3.51815C12.4691 3.96646 12.8096 4.58903 12.9058 5.26981C13.0852 6.62991 13.4179 7.96534 13.8975 9.25065C14.0881 9.7577 14.1293 10.3088 14.0164 10.8386C13.9034 11.3683 13.6409 11.8546 13.26 12.2398L11.4608 14.039C13.4775 17.5857 16.4141 20.5223 19.9608 22.539L21.76 20.7398C22.1452 20.3589 22.6315 20.0964 23.1612 19.9834C23.691 19.8705 24.2421 19.9117 24.7492 20.1023C26.0345 20.5819 27.3699 20.9146 28.73 21.094C29.4182 21.1911 30.0466 21.5377 30.4959 22.0679C30.9452 22.5982 31.1839 23.275 31.1667 23.9698Z"
+    								stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    						</svg>
+    	
+    						<div class="footer-coll-box">
+    							<a href="tel:+79673228444" class="footer-tell">
+    								+7 967 322 8444
+    							</a>
+    							<a href="tel:+79683002277" class="footer-tell">
+    								+7 968 300 2277
+    							</a>
+    						</div>
+    					</div>
+    					<div class="footer-coll-row">
+    						<svg class="footer-coll-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
+    							xmlns="http://www.w3.org/2000/svg">
+    							<path
+    								d="M17 22.6668C20.1296 22.6668 22.6667 20.1298 22.6667 17.0002C22.6667 13.8705 20.1296 11.3335 17 11.3335C13.8704 11.3335 11.3333 13.8705 11.3333 17.0002C11.3333 20.1298 13.8704 22.6668 17 22.6668Z"
+    								stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    							<path
+    								d="M22.6667 11.3331V18.4164C22.6667 19.5436 23.1144 20.6246 23.9115 21.4216C24.7085 22.2187 25.7895 22.6664 26.9167 22.6664C28.0438 22.6664 29.1248 22.2187 29.9219 21.4216C30.7189 20.6246 31.1667 19.5436 31.1667 18.4164V16.9998C31.1665 13.8024 30.0846 10.6991 28.0971 8.19452C26.1096 5.68993 23.3333 3.93134 20.2196 3.20469C17.1059 2.47805 13.8379 2.82608 10.9471 4.19221C8.05624 5.55834 5.71256 7.86221 4.29711 10.7292C2.88166 13.5962 2.47769 16.8577 3.1509 19.9834C3.8241 23.1091 5.53488 25.9152 8.00505 27.9453C10.4752 29.9755 13.5595 31.1103 16.7564 31.1652C19.9533 31.2202 23.0748 30.1921 25.6133 28.2481"
+    								stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    						</svg>
+    						<div class="footer-coll-box">
+    							<a href="mailto:info@tent-group123.ru" class="footer-mail">
+    								info@tent-group123.ru
+    							</a>
+    						</div>
+    					</div>
+    					<div class="footer-coll-row">
+    						<svg class="footer-coll-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
+    							xmlns="http://www.w3.org/2000/svg">
+    							<path
+    								d="M28.3333 14.1668C28.3333 22.6668 17 31.1668 17 31.1668C17 31.1668 5.66666 22.6668 5.66666 14.1668C5.66666 11.161 6.8607 8.27837 8.98611 6.15295C11.1115 4.02754 13.9942 2.8335 17 2.8335C20.0058 2.8335 22.8885 4.02754 25.0139 6.15295C27.1393 8.27837 28.3333 11.161 28.3333 14.1668V14.1668Z"
+    								stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    							<path
+    								d="M17 18.4165C19.3472 18.4165 21.25 16.5137 21.25 14.1665C21.25 11.8193 19.3472 9.9165 17 9.9165C14.6528 9.9165 12.75 11.8193 12.75 14.1665C12.75 16.5137 14.6528 18.4165 17 18.4165Z"
+    								stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    						</svg>
+    						<div class="footer-coll-box">
+    							<div class="footer-adress">
+    								г. Краснодар, ул. Гагарина 116
+    							</div>
+    							<div class="footer-adress">
+    								г. Сочи, ул. Альпийская 39 кв. 49
+    							</div>
+    						</div>
+    					</div>
+    				</div>
     				<ul class="footer-list">
-    					<li class="footer-list-inner footer-list-header">
+    					<li class="footer-list-inner footer-list-header --two">
     						Страницы
     					</li>
     					<li class="footer-list-inner">
@@ -1005,7 +1073,7 @@
     					</li>
     				</ul>
     			</div>
-    			<div class="footer-row d-flex justify-content-between">
+    			<div class="footer-row d-md-flex d-block justify-content-between">
     				<a href="#" class="footer-row-link">
     					политика конфиденциальности
     				</a>
@@ -1015,7 +1083,49 @@
     			</div>
     		</div>
     	</footer>
+    	<div class="menu d-lg-none d-flex justify-content-between">
+    		<a href="#scroll-top" class="menu-link d-flex flex-column align-items-center justify-content-center">
+    			<svg class="manu-link-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+    				xmlns="http://www.w3.org/2000/svg">
+    				<path
+    					d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z"
+    					stroke="#042940" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    				<path d="M22 16L16 10L10 16" stroke="#042940" stroke-width="2" stroke-linecap="round"
+    					stroke-linejoin="round" />
+    				<path d="M16 22V10" stroke="#042940" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    			</svg>
+    			<div class="menu-link-text">
+    				Наверх
+    			</div>
+    		</a>
+    		<a href="#" class="menu-link  d-flex flex-column  align-items-center justify-content-center">
+    			<svg class="manu-link-svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+    				xmlns="http://www.w3.org/2000/svg">
+    				<path fill-rule="evenodd" clip-rule="evenodd"
+    					d="M21.8735 17.9775C21.4992 17.7913 19.6642 16.8938 19.3225 16.7688C18.9809 16.645 18.7322 16.5838 18.4823 16.9563C18.2336 17.3263 17.5189 18.1638 17.3016 18.4113C17.0831 18.66 16.8658 18.69 16.4927 18.505C16.1197 18.3175 14.9164 17.9263 13.4909 16.6613C12.3818 15.6763 11.632 14.46 11.4147 14.0875C11.1974 13.7163 11.3908 13.515 11.578 13.33C11.7463 13.1638 11.951 12.8963 12.1381 12.68C12.3253 12.4625 12.3868 12.3075 12.5112 12.0588C12.6368 11.8113 12.574 11.595 12.4798 11.4088C12.3868 11.2225 11.6408 9.39379 11.3293 8.65004C11.0266 7.92629 10.7188 8.02504 10.4902 8.01254C10.2717 8.00254 10.023 8.00004 9.77431 8.00004C9.52562 8.00004 9.12118 8.09254 8.77955 8.46504C8.43666 8.83629 7.47329 9.73504 7.47329 11.5638C7.47329 13.3913 8.80969 15.1575 8.99684 15.4063C9.18398 15.6538 11.6282 19.4063 15.3724 21.015C16.2641 21.3975 16.9587 21.6263 17.5001 21.7963C18.3943 22.08 19.2082 22.04 19.8513 21.9438C20.5673 21.8375 22.0594 21.045 22.3709 20.1775C22.6811 19.31 22.6811 18.5663 22.5882 18.4113C22.4952 18.2563 22.2465 18.1638 21.8723 17.9775H21.8735ZM15.0634 27.2313H15.0584C12.8345 27.2317 10.6515 26.6367 8.7381 25.5088L8.28593 25.2413L3.58592 26.4688L4.84068 21.9088L4.54552 21.4413C3.30224 19.4717 2.64428 17.1922 2.64768 14.8663C2.65019 8.05379 8.21936 2.5113 15.0684 2.5113C18.3843 2.5113 21.5017 3.7988 23.8455 6.13379C25.0015 7.27951 25.9177 8.64199 26.5412 10.1424C27.1647 11.6428 27.4831 13.2514 27.4778 14.875C27.4753 21.6875 21.9062 27.2313 15.0634 27.2313ZM25.629 4.36004C24.2451 2.9737 22.5985 1.87447 20.7847 1.12605C18.9708 0.37763 17.0257 -0.0050953 15.0621 5.12219e-05C6.83021 5.12219e-05 0.128114 6.66879 0.125602 14.865C0.121787 17.4735 0.809344 20.0368 2.1189 22.2963L0 30L7.91792 27.9325C10.1083 29.1202 12.5628 29.7425 15.0571 29.7425H15.0634C23.2953 29.7425 29.9974 23.0738 29.9999 14.8763C30.006 12.9229 29.6228 10.9877 28.8726 9.18258C28.1223 7.3775 27.0199 5.73838 25.629 4.36004Z"
+    					fill="#042940" />
+    			</svg>
+    			<div class="menu-link-text">
+    				написать
+    			</div>
+    		</a>
+    		<a href="#" class="menu-link --color  d-flex flex-column  align-items-center justify-content-center">
+    			<svg class="manu-link-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+    				xmlns="http://www.w3.org/2000/svg">
+    				<path
+    					d="M22.9996 19.4817V21.5893C23.0004 21.7849 22.9602 21.9786 22.8817 22.1578C22.8031 22.3371 22.6879 22.498 22.5435 22.6303C22.399 22.7626 22.2285 22.8633 22.0428 22.9259C21.8571 22.9886 21.6603 23.0119 21.465 22.9943C19.299 22.7594 17.2183 22.0207 15.3902 20.8376C13.6895 19.7589 12.2475 18.3198 11.1667 16.6224C9.9771 14.7897 9.23677 12.7031 9.00571 10.5316C8.98812 10.3373 9.01126 10.1415 9.07364 9.95664C9.13603 9.77178 9.2363 9.60191 9.36807 9.45785C9.49984 9.31378 9.66022 9.19868 9.839 9.11986C10.0178 9.04105 10.2111 9.00025 10.4065 9.00007H12.5183C12.8599 8.99671 13.1911 9.11744 13.4501 9.33976C13.7091 9.56208 13.8783 9.87081 13.9261 10.2084C14.0152 10.8829 14.1805 11.5451 14.4188 12.1825C14.5135 12.4339 14.534 12.7072 14.4779 12.9699C14.4218 13.2327 14.2913 13.4738 14.1021 13.6648L13.2081 14.557C14.2102 16.3158 15.6693 17.7721 17.4316 18.7721L18.3256 17.8799C18.5169 17.6911 18.7586 17.5609 19.0218 17.5049C19.2851 17.4488 19.5589 17.4693 19.8108 17.5638C20.4495 17.8016 21.113 17.9666 21.7888 18.0556C22.1308 18.1037 22.4431 18.2756 22.6663 18.5386C22.8895 18.8015 23.0081 19.1372 22.9996 19.4817Z"
+    					fill="#042940" />
+    				<path
+    					d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z"
+    					stroke="#042940" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    			</svg>
+    			<div class="menu-link-text">
+    				позвонить
+    			</div>
+    		</a>
+    	</div>
     </div>
+    
     <div id="popup-1" class="popup mfp-hide">
     	<button class="popup-close popup-btn-close">
     		<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
