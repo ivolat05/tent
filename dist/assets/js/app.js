@@ -302,4 +302,84 @@ $(function () {
 		}
 	}
 	menuOpen();
+	// фиксация картинки
+	// startBlock блок начала анимации
+	// finistBlock блок окончания анимации
+	// blockAnim анимируемый блок
+	animateCircleFooter("view-start", "view-finish", "view-fix");
+	function animateCircleFooter(startBlock, finistBlock, blockAnim) {
+		// Получить заголовок
+		let start = document.getElementById(`${startBlock}`);
+		let finish = document.getElementById(`${finistBlock}`);
+		let anim = document.getElementById(`${blockAnim}`);
+		if (start && anim && finish) {
+			// Получить смещение позиции навигационной панели
+
+			// Добавить класс "sticky" к заголовку, когда вы достигнете его позиции прокрутке.
+			// Удалить "sticky" при выходе из положения прокрутки
+			window.addEventListener("scroll", () => {
+				let startPos = start.offsetTop;
+				let finishPos = finish.offsetTop;
+				console.log(finishPos);
+				console.log(window.pageYOffset);
+				if (
+					window.pageYOffset + window.screen.availHeight / 2 >
+						startPos &&
+					window.pageYOffset - window.screen.availHeight / 3 <
+						finishPos
+				) {
+					anim.classList.add("--anim");
+				} else {
+					anim.classList.remove("--anim");
+				}
+				console.log("1111111111111111df");
+				if (window.pageYOffset === finishPos) {
+					console.log("sfsdfsdfsdf");
+				}
+			});
+		}
+	}
+
+	// slaiders teach
+	function teachSlaid() {
+		const teachSlaider = document.querySelectorAll(".teach-slaider");
+		if (teachSlaider) {
+			window.addEventListener("resize", function () {
+				if (window.innerWidth <= 992) {
+					teachSlaider.forEach((item) => {
+						$(item).not(".slick-initialized").slick({
+							infinite: true,
+							dots: true,
+							arrows: false,
+
+							rows: 0,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						});
+					});
+				} else {
+					teachSlaider.forEach((item) => {
+						$(item).filter(".slick-initialized").slick("unslick");
+					});
+				}
+			});
+			if (window.innerWidth <= 992) {
+				teachSlaider.forEach((item) => {
+					$(item).not(".slick-initialized").slick({
+						infinite: true,
+						dots: true,
+						arrows: false,
+						rows: 0,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					});
+				});
+			} else {
+				teachSlaider.forEach((item) => {
+					$(item).filter(".slick-initialized").slick("unslick");
+				});
+			}
+		}
+	}
+	teachSlaid();
 });

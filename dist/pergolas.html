@@ -116,7 +116,7 @@
     			</div>
     		</div>
     	</header>
-    	<main class="main">
+    	<main class="main main-pergolas" data-aos="fade-up">
     		<div class="container">
     			<div class="main-wrapp">
     				<div class="main-head">
@@ -215,154 +215,153 @@
     			</div>
     		</div>
     	</main>
-    </div>
-    <section class="view view-padding">
-    	<div class="container">
-    		<div class="view-head d-flex justify-content-between">
-    			<h3 class="view-title title">
-    				Любые виды пергол
-    			</h3>
-    			<p class="view-text">
-    				Выберите подходяший тип пергол, и мы составим для Вас расчет 3-ех вариантах
-    			</p>
+    	<section id="view-start" class="view view-padding">
+    		<div class="container">
+    			<div data-aos="zoom-in-left" class="view-head d-flex justify-content-between">
+    				<h3 class="view-title title">
+    					Любые виды пергол
+    				</h3>
+    				<p class="view-text d-none d-lg-block">
+    					Выберите подходяший тип пергол, и мы составим для Вас расчет 3-ех вариантах
+    				</p>
+    			</div>
+    			<div id="view-finish" class="view-wrapp d-xl-flex d-block  justify-content-between">
+    	
+    				<div class="view-coll-btn">
+    					<h4 class="view-coll-title">
+    						Выберите конфигурацию
+    					</h4>
+    					<div class="view-coll-box">
+    						<h5 class="view-box-title">
+    							Форма
+    						</h5>
+    						<div class="view-row">
+    							<label class="view-label">
+    								<input type="radio" name="form-product" class="view-label-form  view-label-input" checked
+    									data-form="flat" data-inform-add="Плоская">
+    								<span class="view-label-span">
+    									Плоская
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="form-product" class="view-label-form  view-label-input"
+    									data-form="curved" data-inform-add="Изогнутая">
+    								<span class="view-label-span">
+    									Изогнутая
+    								</span>
+    							</label>
+    						</div>
+    					</div>
+    	
+    					<div class="view-coll-box">
+    						<h5 class="view-box-title">
+    							вид
+    						</h5>
+    						<div class="view-row">
+    							<label class="view-label">
+    								<input type="radio" name="view-product" class="view-label-view  view-label-input" checked
+    									data-view="metal" data-inform-add="Металлическая">
+    								<span class="view-label-span">
+    									Металлическая
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="view-product" class="view-label-view  view-label-input"
+    									data-view="tent" data-inform-add="тентовая">
+    								<span class="view-label-span">
+    									тентовая
+    								</span>
+    							</label>
+    						</div>
+    					</div>
+    	
+    					<div class="view-coll-box">
+    						<h5 class="view-box-title">
+    							Тип перголы
+    						</h5>
+    						<div class="view-row">
+    							<label class="view-label">
+    								<input type="radio" name="type-product" class="view-label-type view-label-input"
+    									data-flat-metal="./assets/img/view/view-1.png"
+    									data-flat-tent="./assets/img/tech/tech-2.png"
+    									data-curved-metal="./assets/img/tech/tech-3.png"
+    									data-curved-tent="./assets/img/tech/tech-4.png" data-inform-add="Стандарт" checked>
+    								<span class="view-label-span">
+    									Стандарт
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="type-product" class="view-label-type view-label-input"
+    									data-flat-metal="./assets/img/tech/tech-5.png"
+    									data-flat-tent="./assets/img/tech/tech-6.png"
+    									data-curved-metal="./assets/img/tech/tech-7.png"
+    									data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="подвесная">
+    								<span class="view-label-span">
+    									подвесная
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="type-product" class="view-label-type view-label-input"
+    									data-flat-metal="./assets/img/tech/tech-4.png"
+    									data-flat-tent="./assets/img/tech/tech-3.png"
+    									data-curved-metal="./assets/img/tech/tech-1.png"
+    									data-curved-tent="./assets/img/tech/tech-2.png" data-inform-add="Двойная подвесная">
+    								<span class="view-label-span">
+    									Двойная подвесная
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="type-product" class="view-label-type view-label-input"
+    									data-flat-metal="./assets/img/tech/tech-5.png"
+    									data-flat-tent="./assets/img/tech/tech-7.png"
+    									data-curved-metal="./assets/img/tech/tech-6.png"
+    									data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="Отдельностоящая">
+    								<span class="view-label-span">
+    									Отдельностоящая
+    								</span>
+    							</label>
+    							<label class="view-label">
+    								<input type="radio" name="type-product" class="view-label-type view-label-input"
+    									data-flat-metal="./assets/img/tech/tech-1.png"
+    									data-flat-tent="./assets/img/tech/tech-3.png"
+    									data-curved-metal="./assets/img/tech/tech-4.png"
+    									data-curved-tent="./assets/img/tech/tech-8.png"
+    									data-inform-add="Двойная Отдельностоящая">
+    								<span class="view-label-span">
+    									Двойная Отдельностоящая
+    								</span>
+    							</label>
+    						</div>
+    					</div>
+    	
+    				</div>
+    				<div class="view-box-arrow d-flex align-items-center">
+    					<img src="./assets/img/view/view-arrow.svg" alt="" class="view-arrow d-none d-md-block">
+    					<img src="./assets/img/view/view-arrow-mob.svg" alt="" class="view-arrow-mob d-md-none d-block">
+    				</div>
+    				<div class="view-container  ">
+    					<h4 class="view-containter-title">
+    						внешний вид перголы
+    					</h4>
+    					<div id="view-fix" class="view-container-img">
+    						<img src="./assets/img/view/view-1.png" alt="" class="view-img">
+    					</div>
+    					<a href="#popup-1"
+    						data-inform="Получить расчет перголы. Форма: Плоская. Вид: Металлическая. Тип: Стандарт"
+    						class="open-modal view-link d-flex align-items-center justify-content-center">
+    						получить расчет
+    					</a>
+    				</div>
+    			</div>
     		</div>
-    		<div class="view-wrapp d-flex justify-content-between">
-    
-    			<div class="view-coll-btn">
-    				<h4 class="view-coll-title">
-    					Выберите конфигурацию
-    				</h4>
-    				<div class="view-coll-box">
-    					<h5 class="view-box-title">
-    						Форма
-    					</h5>
-    					<div class="view-row">
-    						<label class="view-label">
-    							<input type="radio" name="form-product" class="view-label-form  view-label-input" checked
-    								data-form="flat" data-inform-add="Плоская">
-    							<span class="view-label-span">
-    								Плоская
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="form-product" class="view-label-form  view-label-input"
-    								data-form="curved" data-inform-add="Изогнутая">
-    							<span class="view-label-span">
-    								Изогнутая
-    							</span>
-    						</label>
-    					</div>
-    				</div>
-    
-    				<div class="view-coll-box">
-    					<h5 class="view-box-title">
-    						вид
-    					</h5>
-    					<div class="view-row">
-    						<label class="view-label">
-    							<input type="radio" name="view-product" class="view-label-view  view-label-input" checked
-    								data-view="metal" data-inform-add="Металлическая">
-    							<span class="view-label-span">
-    								Металлическая
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="view-product" class="view-label-view  view-label-input"
-    								data-view="tent" data-inform-add="тентовая">
-    							<span class="view-label-span">
-    								тентовая
-    							</span>
-    						</label>
-    					</div>
-    				</div>
-    
-    				<div class="view-coll-box">
-    					<h5 class="view-box-title">
-    						Тип перголы
-    					</h5>
-    					<div class="view-row">
-    						<label class="view-label">
-    							<input type="radio" name="type-product" class="view-label-type view-label-input"
-    								data-flat-metal="./assets/img/view/view-1.png"
-    								data-flat-tent="./assets/img/tech/tech-2.png"
-    								data-curved-metal="./assets/img/tech/tech-3.png"
-    								data-curved-tent="./assets/img/tech/tech-4.png" data-inform-add="Стандарт" checked>
-    							<span class="view-label-span">
-    								Стандарт
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="type-product" class="view-label-type view-label-input"
-    								data-flat-metal="./assets/img/tech/tech-5.png"
-    								data-flat-tent="./assets/img/tech/tech-6.png"
-    								data-curved-metal="./assets/img/tech/tech-7.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="подвесная">
-    							<span class="view-label-span">
-    								подвесная
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="type-product" class="view-label-type view-label-input"
-    								data-flat-metal="./assets/img/tech/tech-4.png"
-    								data-flat-tent="./assets/img/tech/tech-3.png"
-    								data-curved-metal="./assets/img/tech/tech-1.png"
-    								data-curved-tent="./assets/img/tech/tech-2.png" data-inform-add="Двойная подвесная">
-    							<span class="view-label-span">
-    								Двойная подвесная
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="type-product" class="view-label-type view-label-input"
-    								data-flat-metal="./assets/img/tech/tech-5.png"
-    								data-flat-tent="./assets/img/tech/tech-7.png"
-    								data-curved-metal="./assets/img/tech/tech-6.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="Отдельностоящая">
-    							<span class="view-label-span">
-    								Отдельностоящая
-    							</span>
-    						</label>
-    						<label class="view-label">
-    							<input type="radio" name="type-product" class="view-label-type view-label-input"
-    								data-flat-metal="./assets/img/tech/tech-1.png"
-    								data-flat-tent="./assets/img/tech/tech-3.png"
-    								data-curved-metal="./assets/img/tech/tech-4.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png"
-    								data-inform-add="Двойная Отдельностоящая">
-    							<span class="view-label-span">
-    								Двойная Отдельностоящая
-    							</span>
-    						</label>
-    					</div>
-    				</div>
-    
-    			</div>
-    			<div class="view-box-arrow d-flex align-items-center">
-    				<img src="./assets/img/view/view-arrow.svg" alt="" class="view-arrow">
-    			</div>
-    			<div class="view-container">
-    				<h4 class="view-containter-title">
-    					внешний вид перголы
-    				</h4>
-    				<div class="view-container-img">
-    					<img src="./assets/img/view/view-1.png" alt="" class="view-img">
-    				</div>
-    				<a href="#popup-1"
-    					data-inform="Получить расчет перголы. Форма: Плоская. Вид: Металлическая. Тип: Стандарт"
-    					class="open-modal view-link d-flex align-items-center justify-content-center">
-    					получить расчет
-    				</a>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <div class="wrapper">
+    	</section>
     	<section class="tech tech-padding">
     		<div class="container">
     			<h3 class="tech-title">
     				Самые современные технологии для вашей перголы
     			</h3>
-    			<div class="teach-wrapp d-flex justify-content-between">
-    				<div class="teach-coll">
+    			<div class="teach-wrapp d-xxl-flex d-block justify-content-between">
+    				<div data-aos="fade-right" class="teach-coll">
     					<h4 class="teach-coll-title">
     						Крыша
     					</h4>
@@ -394,7 +393,7 @@
     						</a>
     					</div>
     				</div>
-    				<div class="teach-coll">
+    				<div data-aos="fade-left" class="teach-coll">
     					<h4 class="teach-coll-title">
     						Стены
     					</h4>
@@ -430,7 +429,7 @@
     			<h4 class="teach-coll-title">
     				Дополнительное оборудование
     			</h4>
-    			<div class="teach-slaider d-flex justify-content-between flex-wrap">
+    			<div data-aos="fade-right" class="teach-slaider teach-slaider-body">
     				<a href="#" class="teach-box">
     					<img src="./assets/img/tech/tech-9.png" alt="" class="tach-box-img">
     					<div class="teach-box-text">
@@ -465,7 +464,7 @@
     			</div>
     		</div>
     	</section>
-    	<section class="relax relax-padding">
+    	<section data-aos="flip-up" class="relax relax-padding">
     		<div class="container">
     			<div class="relax-wrapp">
     				<div class="relax-box-img">
@@ -521,10 +520,10 @@
     			</div>
     		</div>
     	</section>
-    	<section class="forms forms-padding">
+    	<section class="forms forms-padding forms-pergolas-pergolas">
     		<div class="container">
     			<div class="forms-wrapp d-lg-flex d-block  justify-content-between">
-    				<div class="forms-coll d-flex flex-column">
+    				<div class="forms-coll d-flex flex-column" data-aos="fade-right">
     					<h3 class="forms-title">
     						Бесплатный замер и <span class="forms-title-span">
     							3D
@@ -540,7 +539,7 @@
     						</span>
     					</p>
     				</div>
-    				<form action="/" class="form">
+    				<form action="/" class="form" data-aos="fade-left">
     					<h3 class="form-title">
     						Получить точный расчет стоимости и сроков
     					</h3>
@@ -563,7 +562,7 @@
     			</div>
     		</div>
     	</section>
-    	<section class="call call-padding">
+    	<section class="call call-padding" data-aos="flip-up">
     		<div class="container">
     			<div class="call-wrapp d-lg-flex d-block justify-content-between">
     				<div class="call-coll d-flex flex-column">
@@ -594,7 +593,7 @@
     	<section class="benefits benefits-padding benefits-pergolas">
     		<div class="container">
     			<div class="benefits-wrapp">
-    				<div class="benefits-row">
+    				<div class="benefits-row" data-aos="fade-right">
     					<div class="benefits-box-img">
     						<img src="./assets/img/benefits/benefits-1-1.png" alt="" class="benefits-img d-none d-lg-block">
     						<img src="./assets/img/benefits/benefits-1-1-mob.png" alt="" class="benefits-img d-block d-lg-none">
@@ -612,7 +611,7 @@
     	
     				</div>
     	
-    				<div class="benefits-row">
+    				<div class="benefits-row" data-aos="fade-left">
     					<div class="benefits-box-img">
     						<img src="./assets/img/benefits/benefits-2-2.png" alt="" class="benefits-img d-none d-lg-block">
     						<img src="./assets/img/benefits/benefits-2-2-mob.png" alt="" class="benefits-img d-block d-lg-none">
@@ -630,7 +629,7 @@
     	
     				</div>
     	
-    				<div class="benefits-row">
+    				<div class="benefits-row" data-aos="fade-right">
     					<div class="benefits-box-img">
     						<img src="./assets/img/benefits/benefits-3-3.png" alt="" class="benefits-img d-none d-lg-block">
     						<img src="./assets/img/benefits/benefits-3-3-mob.png" alt="" class="benefits-img d-block d-lg-none">
@@ -682,7 +681,7 @@
     	</div>
     	<section class="terms terms-padding">
     		<div class="container">
-    			<div class="terms-head d-flex align-items-baseline justify-content-between">
+    			<div data-aos="fade-down" class="terms-head d-flex align-items-baseline justify-content-between">
     				<h3 class="terms-title title">
     					Установим уже через 3 недели
     				</h3>
@@ -693,7 +692,8 @@
     			</div>
     			<div class="terms-body">
     	
-    				<div class="terms-box d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num d-flex align-items-center justify-content-center">
     						01
     					</div>
@@ -708,7 +708,8 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						02
     					</div>
@@ -722,7 +723,8 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						03
     					</div>
@@ -736,7 +738,8 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						04
     					</div>
@@ -751,7 +754,8 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						05
     					</div>
@@ -766,7 +770,8 @@
     					</div>
     				</div>
     	
-    				<div class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
+    				<div data-aos="zoom-out"
+    					class="terms-box  d-flex flex-md-row flex-column align-items-md-start align-items-center">
     					<div class="terms-num  d-flex align-items-center justify-content-center">
     						06
     					</div>
@@ -787,7 +792,7 @@
     	<section class="forms forms-pergolas-padding forms-order">
     		<div class="container">
     			<div class="forms-wrapp d-lg-flex d-block justify-content-between">
-    				<div class="forms-coll d-flex flex-column">
+    				<div class="forms-coll d-flex flex-column" data-aos="fade-right">
     					<h3 class="forms-title">
     						Получить точный
     						<span class="forms-title-span">
@@ -800,7 +805,7 @@
     						Узнайте точный расчет стоимости в 3-х ценовых сегментах.
     					</p>
     				</div>
-    				<form action="/" class="form">
+    				<form action="/" class="form" data-aos="fade-left">
     					<h3 class="form-title">
     						Заполните форму ниже
     						и мы перезвоним вам
