@@ -188,4 +188,52 @@ $(function () {
 	} else {
 		$(".galary-mob-slaid ").filter(".slick-initialized").slick("unslick");
 	}
+
+	// изменение картинки внешнего вида пергоды
+	function pergolaImg() {
+		// кнопка выбора конфиграции
+		const btn = document.querySelectorAll(".view-label");
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				// внешняя форма
+				const externalForm =
+					document.querySelectorAll(".view-label-form");
+				let dataForm;
+				// внешний вид
+				const appearance =
+					document.querySelectorAll(".view-label-view");
+				let dataAppearance;
+				//  внешний тип
+				const externalType =
+					document.querySelectorAll(".view-label-type");
+				let dataType;
+				// контайнер изоброжения
+				let imageContainer = document.querySelector(".view-img");
+				externalForm.forEach((item) => {
+					if (item.checked) {
+						let nameData = item.getAttribute("data-form");
+						dataForm = nameData;
+					}
+				});
+
+				appearance.forEach((item) => {
+					if (item.checked) {
+						let nameData = item.getAttribute("data-view");
+						dataAppearance = nameData;
+					}
+				});
+
+				externalType.forEach((item) => {
+					if (item.checked) {
+						let nameData = item.getAttribute(
+							`data-${dataForm}-${dataAppearance}`
+						);
+						dataType = nameData;
+					}
+				});
+				imageContainer.src = `${dataType}`;
+			});
+		});
+	}
+	pergolaImg();
 });
