@@ -108,7 +108,8 @@
     					<div class="header-coll-row">
     						Перезвонить мне
     					</div>
-    					<a href="#" class="header-link d-flex align-items-center justify-content-center">
+    					<a href="#popup-1" data-inform="Перезвонить мне"
+    						class="open-modal header-link d-flex align-items-center justify-content-center">
     						<svg class="header-link-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
     							xmlns="http://www.w3.org/2000/svg">
     							<path
@@ -163,7 +164,8 @@
     				</div>
     				<div class="main-footer">
     					<div class="main-box-btn d-flex flex-column flex-xl-row align-items-center justify-content-between">
-    						<a href="#popup-1" class="open-modal main-btn d-flex align-items-center justify-content-center">
+    						<a href="#popup-1" data-inform="Расчет стоимости"
+    							class="open-modal main-btn d-flex align-items-center justify-content-center">
     							Расчет стоимости
     							<svg class="main-btn-svg" width="14" height="16" viewBox="0 0 14 16" fill="none"
     								xmlns="http://www.w3.org/2000/svg">
@@ -243,14 +245,14 @@
     					<div class="view-row">
     						<label class="view-label">
     							<input type="radio" name="form-product" class="view-label-form  view-label-input" checked
-    								data-form="flat">
+    								data-form="flat" data-inform-add="Плоская">
     							<span class="view-label-span">
     								Плоская
     							</span>
     						</label>
     						<label class="view-label">
     							<input type="radio" name="form-product" class="view-label-form  view-label-input"
-    								data-form="curved">
+    								data-form="curved" data-inform-add="Изогнутая">
     							<span class="view-label-span">
     								Изогнутая
     							</span>
@@ -265,14 +267,14 @@
     					<div class="view-row">
     						<label class="view-label">
     							<input type="radio" name="view-product" class="view-label-view  view-label-input" checked
-    								data-view="metal">
+    								data-view="metal" data-inform-add="Металлическая">
     							<span class="view-label-span">
     								Металлическая
     							</span>
     						</label>
     						<label class="view-label">
     							<input type="radio" name="view-product" class="view-label-view  view-label-input"
-    								data-view="tent">
+    								data-view="tent" data-inform-add="тентовая">
     							<span class="view-label-span">
     								тентовая
     							</span>
@@ -290,7 +292,7 @@
     								data-flat-metal="./assets/img/view/view-1.png"
     								data-flat-tent="./assets/img/tech/tech-2.png"
     								data-curved-metal="./assets/img/tech/tech-3.png"
-    								data-curved-tent="./assets/img/tech/tech-4.png" checked>
+    								data-curved-tent="./assets/img/tech/tech-4.png" data-inform-add="Стандарт" checked>
     							<span class="view-label-span">
     								Стандарт
     							</span>
@@ -300,7 +302,7 @@
     								data-flat-metal="./assets/img/tech/tech-5.png"
     								data-flat-tent="./assets/img/tech/tech-6.png"
     								data-curved-metal="./assets/img/tech/tech-7.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png">
+    								data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="подвесная">
     							<span class="view-label-span">
     								подвесная
     							</span>
@@ -310,7 +312,7 @@
     								data-flat-metal="./assets/img/tech/tech-4.png"
     								data-flat-tent="./assets/img/tech/tech-3.png"
     								data-curved-metal="./assets/img/tech/tech-1.png"
-    								data-curved-tent="./assets/img/tech/tech-2.png">
+    								data-curved-tent="./assets/img/tech/tech-2.png" data-inform-add="Двойная подвесная">
     							<span class="view-label-span">
     								Двойная подвесная
     							</span>
@@ -320,7 +322,7 @@
     								data-flat-metal="./assets/img/tech/tech-5.png"
     								data-flat-tent="./assets/img/tech/tech-7.png"
     								data-curved-metal="./assets/img/tech/tech-6.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png">
+    								data-curved-tent="./assets/img/tech/tech-8.png" data-inform-add="Отдельностоящая">
     							<span class="view-label-span">
     								Отдельностоящая
     							</span>
@@ -330,7 +332,8 @@
     								data-flat-metal="./assets/img/tech/tech-1.png"
     								data-flat-tent="./assets/img/tech/tech-3.png"
     								data-curved-metal="./assets/img/tech/tech-4.png"
-    								data-curved-tent="./assets/img/tech/tech-8.png">
+    								data-curved-tent="./assets/img/tech/tech-8.png"
+    								data-inform-add="Двойная Отдельностоящая">
     							<span class="view-label-span">
     								Двойная Отдельностоящая
     							</span>
@@ -349,7 +352,9 @@
     				<div class="view-container-img">
     					<img src="./assets/img/view/view-1.png" alt="" class="view-img">
     				</div>
-    				<a href="#popup-1" class="open-modal view-link d-flex align-items-center justify-content-center">
+    				<a href="#popup-1"
+    					data-inform="Получить расчет перголы. Форма: Плоская. Вид: Металлическая. Тип: Стандарт"
+    					class="open-modal view-link d-flex align-items-center justify-content-center">
     					получить расчет
     				</a>
     			</div>
@@ -895,7 +900,8 @@
     				<p class="quest-text">
     					Отправьте свои контактные данные - поможем разобраться. Это бесплатно и ни к чему вас не обязывает!
     				</p>
-    				<a href="#popup-2" class="open-modal quest-link d-flex align-items-center justify-content-center">
+    				<a href="#popup-2" data-inform="заказать обратный звонок"
+    					class="open-modal quest-link d-flex align-items-center justify-content-center">
     					заказать обратный звонок
     				</a>
     			</div>
@@ -1057,6 +1063,7 @@
     				согласен с обработкой персноальных данных
     			</span>
     		</label>
+    		<input class="input-hidden" type="hidden" name="calculate" value="Получить расчет стоимости">
     	</form>
     </div>
     <div id="popup-2" class="popup mfp-hide">
@@ -1081,6 +1088,7 @@
     				согласен с обработкой персноальных данных
     			</span>
     		</label>
+    		<input type="hidden" name="call" value="ПЕРЕЗВОНИТЬ МНЕ">
     	</form>
     </div>
     

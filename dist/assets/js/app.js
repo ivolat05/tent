@@ -193,47 +193,77 @@ $(function () {
 	function pergolaImg() {
 		// кнопка выбора конфиграции
 		const btn = document.querySelectorAll(".view-label");
-		btn.forEach((item) => {
-			item.addEventListener("click", () => {
-				// внешняя форма
-				const externalForm =
-					document.querySelectorAll(".view-label-form");
-				let dataForm;
-				// внешний вид
-				const appearance =
-					document.querySelectorAll(".view-label-view");
-				let dataAppearance;
-				//  внешний тип
-				const externalType =
-					document.querySelectorAll(".view-label-type");
-				let dataType;
-				// контайнер изоброжения
-				let imageContainer = document.querySelector(".view-img");
-				externalForm.forEach((item) => {
-					if (item.checked) {
-						let nameData = item.getAttribute("data-form");
-						dataForm = nameData;
-					}
-				});
+		if (btn) {
+			btn.forEach((item) => {
+				item.addEventListener("click", () => {
+					let changeAttribute = document.querySelector(".view-link");
+					// внешняя форма
+					const externalForm =
+						document.querySelectorAll(".view-label-form");
+					let dataForm;
+					let dataFormInform;
+					// внешний вид
+					const appearance =
+						document.querySelectorAll(".view-label-view");
+					let dataAppearance;
+					let dataAppearanceInform;
+					//  внешний тип
+					const externalType =
+						document.querySelectorAll(".view-label-type");
+					let dataType;
+					let dataTypeInform;
+					// контайнер изоброжения
+					let imageContainer = document.querySelector(".view-img");
+					externalForm.forEach((item) => {
+						if (item.checked) {
+							let nameData = item.getAttribute("data-form");
+							dataFormInform =
+								item.getAttribute("data-inform-add");
+							dataForm = nameData;
+						}
+					});
 
-				appearance.forEach((item) => {
-					if (item.checked) {
-						let nameData = item.getAttribute("data-view");
-						dataAppearance = nameData;
-					}
-				});
+					appearance.forEach((item) => {
+						if (item.checked) {
+							let nameData = item.getAttribute("data-view");
+							dataAppearanceInform =
+								item.getAttribute("data-inform-add");
+							dataAppearance = nameData;
+						}
+					});
 
-				externalType.forEach((item) => {
-					if (item.checked) {
-						let nameData = item.getAttribute(
-							`data-${dataForm}-${dataAppearance}`
-						);
-						dataType = nameData;
-					}
+					externalType.forEach((item) => {
+						if (item.checked) {
+							let nameData = item.getAttribute(
+								`data-${dataForm}-${dataAppearance}`
+							);
+							dataTypeInform =
+								item.getAttribute("data-inform-add");
+							dataType = nameData;
+						}
+					});
+					imageContainer.src = `${dataType}`;
+					changeAttribute.dataset.inform = `
+					Получить расчет перголы. Форма: ${dataFormInform}. Вид: ${dataAppearanceInform}. Тип: ${dataTypeInform}`;
 				});
-				imageContainer.src = `${dataType}`;
 			});
-		});
+		}
 	}
 	pergolaImg();
+	// добавление данных в скрытый input
+	function inputAdd() {
+		let btnOpenModal = document.querySelectorAll(".open-modal");
+		if (btnOpenModal) {
+			btnOpenModal.forEach((item) => {
+				item.addEventListener("click", () => {
+					let dataInform = item.getAttribute("data-inform");
+					let inputHidden = document.querySelector(".input-hidden");
+					if (dataInform) {
+						inputHidden.value = dataInform;
+					}
+				});
+			});
+		}
+	}
+	inputAdd();
 });

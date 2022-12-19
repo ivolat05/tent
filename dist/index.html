@@ -108,7 +108,8 @@
     					<div class="header-coll-row">
     						Перезвонить мне
     					</div>
-    					<a href="#" class="header-link d-flex align-items-center justify-content-center">
+    					<a href="#popup-1" data-inform="Перезвонить мне"
+    						class="open-modal header-link d-flex align-items-center justify-content-center">
     						<svg class="header-link-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
     							xmlns="http://www.w3.org/2000/svg">
     							<path
@@ -163,7 +164,8 @@
     				</div>
     				<div class="main-footer">
     					<div class="main-box-btn d-flex flex-column flex-xl-row align-items-center justify-content-between">
-    						<a href="#popup-1" class="open-modal main-btn d-flex align-items-center justify-content-center">
+    						<a href="#popup-1" data-inform="Расчет стоимости"
+    							class="open-modal main-btn d-flex align-items-center justify-content-center">
     							Расчет стоимости
     							<svg class="main-btn-svg" width="14" height="16" viewBox="0 0 14 16" fill="none"
     								xmlns="http://www.w3.org/2000/svg">
@@ -271,7 +273,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Корзинные  маркизы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -334,7 +336,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Кассетные  маркизы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -397,7 +399,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Фасадные маркизы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -462,7 +464,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Вертикальные  маркизы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -525,7 +527,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Двусторонние  маркизы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -590,7 +592,7 @@
     	
     								</div>
     							</a>
-    							<a href="#popup-1"
+    							<a href="#popup-1" data-inform="получить расчет Перголы"
     								class="open-modal solution-btn --payment  d-flex align-items-center justify-content-end">
     								<div class="solution-btn-text">
     									получить расчет
@@ -986,7 +988,8 @@
     				<p class="quest-text">
     					Отправьте свои контактные данные - поможем разобраться. Это бесплатно и ни к чему вас не обязывает!
     				</p>
-    				<a href="#popup-2" class="open-modal quest-link d-flex align-items-center justify-content-center">
+    				<a href="#popup-2" data-inform="заказать обратный звонок"
+    					class="open-modal quest-link d-flex align-items-center justify-content-center">
     					заказать обратный звонок
     				</a>
     			</div>
@@ -1148,6 +1151,7 @@
     				согласен с обработкой персноальных данных
     			</span>
     		</label>
+    		<input class="input-hidden" type="hidden" name="calculate" value="Получить расчет стоимости">
     	</form>
     </div>
     <div id="popup-2" class="popup mfp-hide">
@@ -1172,6 +1176,7 @@
     				согласен с обработкой персноальных данных
     			</span>
     		</label>
+    		<input type="hidden" name="call" value="ПЕРЕЗВОНИТЬ МНЕ">
     	</form>
     </div>
     
