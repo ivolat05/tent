@@ -266,4 +266,40 @@ $(function () {
 		}
 	}
 	inputAdd();
+
+	//menu open
+	function menuOpen() {
+		const btn = document.querySelector(".header-menu-open");
+		const btnClose = document.querySelector(".header-menu-close");
+		const fon = document.querySelector(".fon");
+		const body = document.querySelector("body");
+		const headerNav = document.querySelector(".header-nav");
+		if (btn) {
+			btn.addEventListener("click", (e) => {
+				fon.classList.toggle("--active");
+				body.classList.toggle("--stop");
+				headerNav.classList.toggle("--active");
+				e.stopPropagation();
+			});
+
+			btnClose.addEventListener("click", function (e) {
+				fon.classList.remove("--active");
+				body.classList.remove("--stop");
+				headerNav.classList.remove("--active");
+			});
+			fon.addEventListener("click", function (e) {
+				fon.classList.remove("--active");
+				body.classList.remove("--stop");
+				headerNav.classList.remove("--active");
+			});
+			window.addEventListener("resize", function () {
+				if (window.innerWidth >= 992) {
+					fon.classList.remove("--active");
+					body.classList.remove("--stop");
+					headerNav.classList.remove("--active");
+				}
+			});
+		}
+	}
+	menuOpen();
 });
