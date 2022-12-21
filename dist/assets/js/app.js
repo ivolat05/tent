@@ -323,7 +323,7 @@ $(function () {
 				console.log(finishPos);
 				console.log(window.pageYOffset);
 				if (
-					window.pageYOffset + window.screen.availHeight / 2 >
+					window.pageYOffset - 210 + window.screen.availHeight / 2 >
 						startPos &&
 					window.pageYOffset - window.screen.availHeight / 3 <
 						finishPos
